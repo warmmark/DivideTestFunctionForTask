@@ -6,9 +6,9 @@ describe('', () => {
     })
 
     test('test function throws an error when secondNumber === 0', () => {
-        expect(divide(2, 0)).toThrow('Division by zero');
+        expect(() => divide(2, 0)).toThrow('Division by zero');
     })
-    
+
     test('test function works with negative numbers', () => {
         expect(divide(-6, 2)).toBe(-3);
     })
